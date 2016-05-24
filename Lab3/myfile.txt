@@ -1,0 +1,21 @@
+EVEN: file.close
+
+EVEN: modes: r - read only
+r+ - read and write
+EVEN: w - write, erasing orig file
+w+ - read and write, erasing orig file
+EVEN: a - append and write
+a+ append, and read and write
+EVEN:
+can use File.open instead of File.new, but File.open creates new file EVEN: object and passes to block
+	- don’t need to close if we open with open
+EVEN:
+IO class:
+EVEN: IO.foreach
+
+EVEN: IO.foreach(“file.txt”) {|line| puts line}
+
+EVEN: class Students
+	include Comparable
+EVEN: 	…
+end
